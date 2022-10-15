@@ -1,0 +1,25 @@
+Scenariusz: Uzytkownik chce dokonac zapisu do szpitala (14)
+Given: Uzytkownik i administrator posiadaja konta w systemie
+And: Uzytnowik jest zalogowany
+And: Uzytkownik nie jest aktywnym pacjentem
+When: Uzytkownik wyslal request w celu wpisania go do listy aktywnych pacjentow
+Then: Uzytkownik ma status 'aktywny pacjent'
+
+Scenariusz: Przekazanie wynikow sprawozdan i analiz do modulu pakietu ms off (13)
+Given: System posiada wyniki sprawozdan i analiz
+When: Administrator uzyl funkcji przekazujacej ww. dane do modulow pakietu ms office, wybierajac odpowiedni format
+Then: Wyniki sprawozdan i analiz sa dostepne w postaci plikow ms office.
+
+Scenariusz: Dodanie nowego wpisu przy wykorzystaniu wbudowanych slownikow wewnetrznych
+Given: Administrator jest zalogowany
+When: Administrator dodal wpis, wybierajac z listy rozwijanej kod terytorialny gminy
+Then: Wpis zostal dodany
+
+Scenariusz: Dynamiczne definiowanie widoku słownika 
+Given: Uzytkownik-Lekarz jest zalogowany
+When: Uzytkownik-Lekarz wybrał filtrowanie zwracające wpisy po kodach klasyfikacji ICD-10
+Then: Wyniki przeprowadzonej filtracji są dostępne w systemie (są wyświetlone)
+
+
+
+
